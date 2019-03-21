@@ -47,7 +47,7 @@ public class cutLine {
 
     public static void main(String[] args) {
         cutLine exp=new cutLine();
-        System.out.println(exp.maxCuttingNumber(100));
+        System.out.println(exp.maxCuttingNumber(0));
     }
 
 }
