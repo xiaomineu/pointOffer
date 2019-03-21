@@ -19,6 +19,7 @@ public class cutLine {
 
         //辅助数组，记录长度为i时所对应的最大乘积;
         int [] maxNumber=new int[length+1];
+        //当其作为切割后的子集时，所对应的最大长度为自身;
         maxNumber[0]=0;
         maxNumber[1]=1;
         maxNumber[2]=2;
