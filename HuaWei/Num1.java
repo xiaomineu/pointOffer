@@ -7,23 +7,26 @@ import java.util.Scanner;
 public class Num1 {
     public static void main(String[] args) {
         Scanner in=new Scanner(System.in);
-        //
-        int N=in.nextInt();
+
+        String k=in.nextLine();
+
+        int N=Integer.parseInt(k);
 
         ArrayList<Integer> arrayList=new ArrayList<>();
 
         ArrayList<String> stringArrayList=new ArrayList<>();
-//        while(true)
-//        {
-//            String s=in.next();
-//            if(s==null)
-//            {
-//                break;
-//            }
-//            stringArrayList.add(s);
-//        }
-        stringArrayList.add("2");
-        stringArrayList.add("1,7,4,3,4");
+        String s;
+        while(in.hasNextLine())
+        {
+            s=in.nextLine();
+            if(s==null)
+            {
+                break;
+            }
+            stringArrayList.add(s);
+        }
+//        stringArrayList.add("2");
+//        stringArrayList.add("1,7,4,3,4");
         int maxLength=0;
         for(int i=0;i<stringArrayList.size();i++)
         {
@@ -32,7 +35,6 @@ public class Num1 {
                 maxLength=(stringArrayList.get(i).length());
             }
         }
-        String s=null;
         int count=0;
         int times=0;
         if((maxLength+1)%(2*N)==0)
@@ -87,6 +89,5 @@ public class Num1 {
             }
         }
     }
-
 
 }
